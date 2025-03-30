@@ -14,6 +14,7 @@ repressilator-oscillation/
 ├── oscillation analysis project.pdf  # Project report describing model construction and interpretation
 ├── 35002125.pdf                  # Original Nature article (Elowitz & Leibler, 2000)
 ├── README.md                     # This file
+├── image                         # images included in report
 ```
 
 ## 🔬 Model Overview
@@ -43,6 +44,29 @@ repressilator-oscillation/
 | mRNA half-life | 2 min |
 | Protein half-life | 10 min |
 
+## 🧠 Insights
+
+- Demonstrates how even a minimal genetic network can generate oscillations.
+- Showcases how symmetry in initial conditions can suppress oscillatory behavior.
+- Provides a reproducible Python implementation of a classic synthetic biology model.
+
+## 🧬 Simulation Results
+
+### 🔁 Oscillation under typical initial conditions
+
+![Protein Oscillation - Typical](image/protein%20dynamics.png)
+
+This plot shows the protein concentration dynamics of the repressilator system under standard asymmetric initial conditions. The oscillations stabilize over time with clear periodicity and phase shift among LacI, TetR, and cI proteins.
+
+---
+
+### 🔄 Oscillation under symmetrical initial condition
+
+![Protein Oscillation - Symmetrical Init](image/repressor%20of%20asym%20initial%20condition.png)
+
+In this simulation, all mRNAs start with equal values. The system still exhibits oscillatory behavior but with altered phase and amplitude, illustrating the sensitivity to initial condition symmetry.
+
+
 ## 📎 Citation
 
 If you use this project or adapt it for your work, please cite:
@@ -50,12 +74,6 @@ If you use this project or adapt it for your work, please cite:
 Lian, Lian (2024). Modeling a Synthetic Oscillatory Network Based on the Repressilator. GitHub Repository.
 Original study: Elowitz, M. B., & Leibler, S. (2000). Nature, 403(6767), 335–338.
 ```
-
-## 🧠 Insights
-
-- Demonstrates how even a minimal genetic network can generate oscillations.
-- Showcases how symmetry in initial conditions can suppress oscillatory behavior.
-- Provides a reproducible Python implementation of a classic synthetic biology model.
 
 ## 📬 Contact
 
